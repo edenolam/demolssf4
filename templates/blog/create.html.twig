@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block body %}
+    <h5> Creation d'un article</h5>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <input type="submit" class="btn btn-success" value="enregistre">
+    {{ form_end(form) }}
+
+{% endblock %}
+
