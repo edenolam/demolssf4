@@ -8,7 +8,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="{{ path('home') }}">Blog</a>
+    <a class="navbar-brand" href="{{ path('home') }}">Blogosphère</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -19,12 +19,26 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ path('blog') }}">Articles</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ path('blog_create') }}">Creer un article</a>
-            </li>
+            {% if app.user %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('blog_create') }}">Creer un article</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('security_logout') }}">Deconnexion</a>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('security_login') }}">Connexion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('security_registration') }}">Inscription</a>
+                </li>
+            {% endif %}
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <label>
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            </label>
             <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>

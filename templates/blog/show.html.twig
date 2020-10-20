@@ -4,17 +4,62 @@
 
 {% endblock %}
 
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker.css">
+{% endblock %}
+
 {% block body %}
     <article>
         <h2>{{ article.title }}</h2>
-        <div class="metadata">Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i') }} dans la categorie politique</div>
+        <div class="metadata">Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i') }} dans la categorie
+            {{ article.category.title }}</div>
         <div class="content">
-            <img src="{{ article.image }}" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eius fuga id ipsum laborum nemo nostrum optio provident, quae quas quos ratione sunt? Mollitia, velit, vitae? Dolorem doloremque dolores esse!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eius fuga id ipsum laborum nemo nostrum optio provident, quae quas quos ratione sunt? Mollitia, velit, vitae? Dolorem doloremque dolores esse!</p>
-            <hr>
+            <img src="{{ article.image }}" class="w-50" alt="">
             <p>{{article.content | raw}}</p>
         </div>
+        <a href="{{ path('blog_edit', {'id' : article.id}) }}">modifier</a>
     </article>
+    <section id="commentaires">
+        <h5>{{ article.comments | length }} commentaires</h5>
+        {% for comment in article.comments %}
+            <div class="comment">
+                <div class="row">
+                    <div class="col-3">
+                        {{ comment.author }} (<small>{{ comment.createdAt | date('d/m/Y à H:i')}}</small>)
+                    </div>
+                    <div class="col">
+                        {{ comment.content | raw}}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        {{ include('comment/create.html.twig') }}
+        {% if app.user %}
+            {{ form_start(form) }}
+            {{ form_row(form.author, {'attr': {'placeholder': "Votre commentaire"}}) }}
+            {{ form_row(form.content, {'attr': {'placeholder': "Votre contenu"}}) }}
+            <button type="submit" class="btn btn-success">enregistrer</button>
+            {{ form_end(form) }}
+        {% else %}
+            <a class="" href="{{ path('security_login') }}">Connectez vous pour laisser un commentaire</a>
+        {% endif %}
+    </section>
+
+{% endblock %}
+
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+
+        jQuery(document).ready(function() {
+            $('.js-datepicker').datepicker({
+                format: 'yyyy-mm-dd'
+            });
+        });
+    </script>
 {% endblock %}
 

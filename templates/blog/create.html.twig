@@ -5,10 +5,16 @@
 {% endblock %}
 
 {% block body %}
-    <h5> Creation d'un article</h5>
+    <h5> {{ editMode ? 'Modifier l\'article' : 'Nouvel article' }}</h5>
     {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <input type="submit" class="btn btn-success" value="enregistre">
+    {{ form_errors(form.title) }}
+    {{ form_row(form.title, {'attr': {'placeholder': "Titre de l'article"}}) }}
+    {{ form_row(form.category)}}
+    {{ form_row(form.content, {'attr': {'placeholder': "Contenu de l'article"}}) }}
+    {{ form_row(form.image, {'attr': {'placeholder': "Url de l'image"}}) }}
+    <button type="submit" class="btn btn-success">
+        {{ editMode ? 'Modifier' : 'Ajouter' }}
+    </button>
     {{ form_end(form) }}
 
 {% endblock %}

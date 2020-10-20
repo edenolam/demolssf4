@@ -1,0 +1,9 @@
+
+    {{ form_start(form) }}
+    {{ form_row(form.author, {'attr': {'placeholder': "author"}}) }}
+    {{ form_row(form.content, {'attr': {'placeholder': "Contenu du commentaire"}}) }}
+    <button type="submit" class="btn btn-success">
+        Ajouter
+    </button>
+    {{ form_end(form) }}
+

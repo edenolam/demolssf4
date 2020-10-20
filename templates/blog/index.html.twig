@@ -4,16 +4,25 @@
 
 {% block body %}
     <section class="articles">
-        {% for article in articles %}
-            <article class="mt-4">
-                <h2>{{ article.title }}</h2>
-                <div class="metadata">Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i') }}  dans la categorie politique</div>
-                <div class="content">
-                    <img src="{{ article.image }}" alt="">
-                    <p>{{ article.content | raw }}</p>
-                    <a href="{{ path('blog_show', { id: article.id }) }}" class="btn btn-primary">lire la suite</a>
-                </div>
-            </article>
-        {% endfor %}
+       <div class="row">
+           {% for article in articles %}
+               <article class="col-4 mt-4 d-flex align-self-stretch align-items-stretch">
+                   <div class="card">
+                       <img class="card-img-top" src="{{ article.image }}" alt="{{ article.title }}">
+                       <div class="card-body">
+                           <h5 class="card-title">{{ article.title }}</h5>
+                           <p class="card-text"> {{ article.content | raw }}</p>
+                       </div>
+                       <ul class="list-group list-group-flush">
+                           <li class="list-group-item">Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i') }}  dans la categorie
+                               {{ article.category.title }}</li>
+                       </ul>
+                       <div class="card-body">
+                           <a href="{{ path('blog_show', { id: article.id }) }}" class="btn btn-primary card-link">lire la suite</a>
+                       </div>
+                   </div>
+               </article>
+           {% endfor %}
+       </div>
     </section>
 {% endblock %}

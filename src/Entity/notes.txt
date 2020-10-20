@@ -1,0 +1,2 @@
+categorie contient des articles
+article contient des commentaires

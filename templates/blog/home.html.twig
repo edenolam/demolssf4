@@ -4,17 +4,25 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Bienvenue dans ce blog</h1>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Aliquid cumque cupiditate explicabo laboriosam velit.
-        Non officiis qui reiciendis sed veritatis? Corporis eligendi obcaecati sapiente!
-        Animi labore minus necessitatibus possimus tempora!</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Aliquid cumque cupiditate explicabo laboriosam velit.
-        Non officiis qui reiciendis sed veritatis? Corporis eligendi obcaecati sapiente!
-        Animi labore minus necessitatibus possimus tempora!</p>
+    <div class="jumbotron">
+        <h1 class="display-3">Présentation et variété de la blogosphère</h1>
+        <p class="lead">Le terme « blog » recouvre beaucoup de notions : les œuvres d'un dessinateur, les nouvelles activités d'une association,
+            un journal intime anonyme, des poèmes, l'opinion d'une journaliste, le carnet de bord d'un photographe, des satires d'hommes politiques,
+            les vidéos d'une classe de collège, un roman en construction, les anecdotes quotidiennes d'une mère de famille...
+            La liste est sans fin et surprend par sa diversité. Tout un vocabulaire désigne ses différentes utilisations : « vlog », ou « vidéoblog »,
+            (blog vidéo), « bdblog » ou webcomic (blog BD), « photoblog » (blog photo), audioblog (blog audio)...
+        </p>
+        <p class="lead">
+            Le concept « blog » est assez englobant pour autoriser toutes ces acceptions. Le phénomène connaît son succès grâce à la facilité
+            de publication proposée par des logiciels automatisés de publication, la liberté éditoriale (il n'y a généralement pas de contrôleur
+            chargé avant publication de la relecture d'un billet) et la grande capacité d'interaction en temps réel avec le lectorat
+            (via les commentaires et le courriel). </p>
+        <hr class="my-4">
+        <p>Vous aussi venez consulter nos articles, Vous pouvez aussi laisser un commentaire.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{{ path('blog') }}" role="button">Nos Articles</a>
+        </p>
+    </div>
 {% endblock %}
 
 
