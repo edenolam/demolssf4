@@ -7,35 +7,61 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker.css">
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker.css">
 {% endblock %}
 
 {% block body %}
-    <article>
-        <h2>{{ article.title }}</h2>
-        <div class="metadata">Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i') }} dans la categorie
-            {{ article.category.title }}</div>
-        <div class="content">
-            <img src="{{ article.image }}" class="w-50" alt="">
-            <p>{{article.content | raw}}</p>
-        </div>
-        <a href="{{ path('blog_edit', {'id' : article.id}) }}">modifier</a>
-    </article>
-    <section id="commentaires">
-        <h5>{{ article.comments | length }} commentaires</h5>
-        {% for comment in article.comments %}
-            <div class="comment">
-                <div class="row">
-                    <div class="col-3">
-                        {{ comment.author }} (<small>{{ comment.createdAt | date('d/m/Y à H:i')}}</small>)
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="card border-secondary mb-3" style="max-width: 40rem;">
+                    <div class="card-header">
+                        <div class="metadata">Ecrit le {{ article.createdAt | date('d/m/Y') }}
+                            à {{ article.createdAt | date('H:i') }}
+                            dans la categorie
+                            {{ article.category.title }}</div>
                     </div>
-                    <div class="col">
-                        {{ comment.content | raw}}
+                    <img src="{{ article.image }}" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">{{ article.title }}</h4>
+                        <p class="card-text">{{ article.content | raw }}</p>
                     </div>
                 </div>
-            </div>
-        {% endfor %}
-        {{ include('comment/create.html.twig') }}
+
+                <a href="{{ path('blog_edit', {'id' : article.id}) }}" class="btn btn-primary">modifier</a>
+            </article>
+        </div>
+        <div class="col">
+            <section id="commentaires" class="mt-4">
+                <h5>{{ article.comments | length }} commentaires</h5>
+
+
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Auteur</th>
+                        <th scope="col">Contenu</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for comment in article.comments %}
+                        <tr class="table-secondary">
+                            <th scope="row">{{ comment.createdAt | date('d/m/Y à H:i') }}</th>
+                            <td>{{ comment.author }}</td>
+                            <td>{{ comment.content | raw }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+
+
+
         {% if app.user %}
             {{ form_start(form) }}
             {{ form_row(form.author, {'attr': {'placeholder': "Votre commentaire"}}) }}
@@ -45,7 +71,7 @@
         {% else %}
             <a class="" href="{{ path('security_login') }}">Connectez vous pour laisser un commentaire</a>
         {% endif %}
-    </section>
+
 
 {% endblock %}
 
@@ -55,7 +81,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
     <script>
 
-        jQuery(document).ready(function() {
+        jQuery(document).ready(function () {
             $('.js-datepicker').datepicker({
                 format: 'yyyy-mm-dd'
             });

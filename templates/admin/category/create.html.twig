@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h5> {{ editMode ? 'Modifier la categorie' : 'Nouvel categorie' }}</h5>
+    {{ form_start(form) }}
+    {{ form_errors(form.title) }}
+    {{ form_row(form.title, {'attr': {'placeholder': "Titre"}}) }}
+    {{ form_row(form.description, {'attr': {'placeholder': "description"}}) }}
+    <button type="submit" class="btn btn-success">
+        {{ editMode ? 'Modifier' : 'Ajouter' }}
+    </button>
+    {{ form_end(form) }}
+{% endblock %}

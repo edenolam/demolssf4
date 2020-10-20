@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CategoryController!{% endblock %}
+
+{% block body %}
+    <h5>liste des Categories ({{ categories | length }})</h5>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th scope="col">ref</th>
+            <th scope="col">titre</th>
+            <th scope="col">description</th>
+            <th scope="col">modifier</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for category in categories %}
+            <tr class="table-active">
+                <th scope="row">{{ category.id }}</th>
+                <td>{{ category.title }}</td>
+                <td>{{ category.description }}</td>
+                <td><a href="{{ path('category_edit', {'id' : category.id}) }}"><i class="fas fa-pen"></i></a></td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+{% endblock %}
