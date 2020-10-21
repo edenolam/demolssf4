@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}liste des utilisateurs{% endblock %}
+
+{% block body %}
+    <h5>liste des Utlisateurs ({{ users | length }})</h5>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th scope="col">ref</th>
+            <th scope="col">username</th>
+            <th scope="col">email</th>
+            <th scope="col">roles</th>
+            <th scope="col">articles</th>
+            <th scope="col">actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr class="table-active">
+                <th scope="row">{{ user.id }}</th>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>
+                    <ul class="p-0">
+                        {% for role in user.roles %}
+                          <li>{{ role }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>{{ user.articles | length }}</td>
+                <td><a href="{{ path('admin_userEdit', {'id' : user.id}) }}"><i class="fas fa-pen"></i></a></td>
+            </tr>
+        {% else %}
+            <tr class="table-active">
+                <td colspan="5">Il n'y a pas d'utilisateurs</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

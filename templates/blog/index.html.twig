@@ -1,12 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello BlogController!{% endblock %}
+{% block title %}{% endblock %}
 
 {% block body %}
     <section class="articles">
        <div class="row">
            {% for article in articles %}
-               <article class="col-4 mt-4 d-flex align-self-stretch align-items-stretch">
+               <article class="col-4 mt-4">
                    <div class="card">
                        <img class="card-img-top h-50" src="{{ article.image }}" alt="{{ article.title }}">
                        <div class="card-body">

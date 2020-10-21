@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block body %}
+    <h5> modifier</h5>
+    {{ form_start(form) }}
+    {{ form_row(form.username, {'attr': {'placeholder': "username"}}) }}
+    {{ form_row(form.email, {'attr': {'placeholder': "email"}}) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}

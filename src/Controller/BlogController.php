@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Article;
 use App\Entity\Comment;
+use App\Entity\User;
 use App\Form\ArticleType;
 use App\Form\CommentType;
 use App\Repository\ArticleRepository;
@@ -38,11 +39,12 @@ class BlogController extends AbstractController
     }
 
     /**
-     * @Route ("/article/new", name="blog_create")
-     * @Route ("/article/{id}/edit", name="blog_edit")
+     * @Route ("admin/article/new", name="blog_create")
+     * @Route ("admin/article/{id}/edit", name="blog_edit")
      * @param Article|null $article
      * @param Request $request
      * @param EntityManagerInterface $manager
+     * @param User $user
      * @return Response
      */
     public function form(Article $article = null, Request $request, EntityManagerInterface $manager)
@@ -67,7 +69,7 @@ class BlogController extends AbstractController
     }
 
     /**
-     * @Route ("/blog/{id}", name="blog_show")
+     * @Route ("/article/{id}", name="blog_show")
      * @param Article $article
      * @param Request $request
      * @param EntityManagerInterface $manager
