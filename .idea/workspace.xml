@@ -1,33 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64345066-6cf8-4e19-995d-a367934cdcbc" name="Default Changelist" comment="gestion des roles">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201021095349.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201021122448.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201021122736.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201021124011.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201021132758.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/edit_user.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/users.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7c98e29-4a1b-4387-a773-d79fd4705403.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d7c98e29-4a1b-4387-a773-d79fd4705403.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="64345066-6cf8-4e19-995d-a367934cdcbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/category/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/category/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +174,9 @@
       <workItem from="1603196912103" duration="4110000" />
       <workItem from="1603204283319" duration="11352000" />
       <workItem from="1603267581542" duration="1837000" />
-      <workItem from="1603271308256" duration="18347000" />
+      <workItem from="1603271308256" duration="18422000" />
+      <workItem from="1603360995093" duration="757000" />
+      <workItem from="1603451862663" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="mep mysql">
       <created>1602938002886</created>
@@ -222,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603215468367</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="gestion des roles">
+      <created>1603301833275</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603301833275</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,10 +244,10 @@
     </state>
     <state x="640" y="257" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.997@0.27.1920.997" timestamp="1603204573323" />
     <state x="533" y="208" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1602947979228" />
-    <state x="438" y="44" width="924" height="911" key="CommitChangelistDialog2" timestamp="1603301727962">
+    <state x="438" y="44" width="924" height="911" key="CommitChangelistDialog2" timestamp="1603301833175">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="438" y="44" width="924" height="911" key="CommitChangelistDialog2/0.27.1920.997@0.27.1920.997" timestamp="1603301727962" />
+    <state x="438" y="44" width="924" height="911" key="CommitChangelistDialog2/0.27.1920.997@0.27.1920.997" timestamp="1603301833175" />
     <state x="365" y="15" width="860" height="876" key="CommitChangelistDialog2/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1602949607766" />
     <state x="661" y="350" width="277" height="207" key="Github.ShareDialog" timestamp="1602935209323">
       <screen x="0" y="0" width="1600" height="900" />
@@ -300,10 +284,10 @@
     <state width="598" height="495" key="SwitcherDM/0.27.1920.997@0.27.1920.997" timestamp="1603301624725" />
     <state width="498" height="446" key="SwitcherDM/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1603012626489" />
     <state width="498" height="446" key="SwitcherDM/921.900.1366.768/0.0.1600.900@0.0.1600.900" timestamp="1603140265249" />
-    <state x="474" y="233" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603215485840">
+    <state x="474" y="233" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603301842046">
       <screen x="0" y="27" width="1920" height="997" />
     </state>
-    <state x="474" y="233" key="Vcs.Push.Dialog.v2/0.27.1920.997@0.27.1920.997" timestamp="1603215485840" />
+    <state x="474" y="233" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.997@0.27.1920.997" timestamp="1603301842046" />
     <state x="395" y="186" width="800" height="535" key="Vcs.Push.Dialog.v2/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1602949611777" />
     <state x="689" y="327" width="367" height="260" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603054052041">
       <screen x="0" y="0" width="1600" height="900" />
