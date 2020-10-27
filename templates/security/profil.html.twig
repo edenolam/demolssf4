@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-header">
+                <h5>{{ app.user.username }}</h5>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ app.user.email }}</h5>
+                {% for role in app.user.roles %}
+                    <p class="card-text">{{ role }}</p>
+                {% endfor %}
+                {% if is_granted('ROLE_EDITOR') %}
+                    <p class="card-text">{{ app.user.articles | length }} articles</p>
+                {% endif %}
+                <a href="{{ path('profil_edit') }}" class="btn btn-primary">modifer</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block title %}
+
+{% endblock %}
+

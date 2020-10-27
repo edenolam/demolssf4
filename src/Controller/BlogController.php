@@ -10,6 +10,7 @@ use App\Form\CommentType;
 use App\Repository\ArticleRepository;
 use DateTime;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -39,16 +40,18 @@ class BlogController extends AbstractController
     }
 
     /**
+     * @IsGranted("ROLE_EDITOR")
      * @Route ("admin/article/new", name="blog_create")
+     * @IsGranted("ROLE_ADMIN")
      * @Route ("admin/article/{id}/edit", name="blog_edit")
      * @param Article|null $article
      * @param Request $request
      * @param EntityManagerInterface $manager
-     * @param User $user
      * @return Response
      */
     public function form(Article $article = null, Request $request, EntityManagerInterface $manager)
     {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
         if (!$article){
             $article = new Article();
         }

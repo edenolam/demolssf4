@@ -28,8 +28,9 @@
                         <p class="card-text">{{ article.content | raw }}</p>
                     </div>
                 </div>
-
-                <a href="{{ path('blog_edit', {'id' : article.id}) }}" class="btn btn-primary">modifier</a>
+                {% if is_granted('ROLE_MODO') %}
+                    <a href="{{ path('blog_edit', {'id' : article.id}) }}" class="btn btn-primary">modifier</a>
+                {% endif %}
             </article>
         </div>
         <div class="col">

@@ -24,7 +24,7 @@ class CategoryController extends AbstractController
      */
     public function index(CategoryRepository $repository)
     {
-        return $this->render('admin/category/index.html.twig', [
+        return $this->render('category/index.html.twig', [
             'categories' => $repository->findAll(),
         ]);
     }
@@ -49,7 +49,7 @@ class CategoryController extends AbstractController
             $manager->flush();
             return $this->redirectToRoute('category');
         }
-        return $this->render('admin/category/create.html.twig', [
+        return $this->render('category/create.html.twig', [
             'form' => $form->createView(),
             'editMode' => $category->getId() !== null
         ]);

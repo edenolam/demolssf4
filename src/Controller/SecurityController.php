@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\RegistrationType;
+use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -14,6 +15,25 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class SecurityController extends AbstractController
 {
+
+    /**
+     * @Route("/profil", name="profil")
+     * @return Response
+     */
+    public function profil()
+    {
+        return $this->render('security/profil.html.twig');
+    }
+
+    /**
+     * @Route("/profil/edit", name="profil_edit")
+     * @return Response
+     */
+    public function profilEdit()
+    {
+        return $this->render('security/profil.html.twig');
+    }
+
     /**
      * @Route("/inscription", name="security_registration")
      * @param Request $request
