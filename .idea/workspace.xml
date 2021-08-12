@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64345066-6cf8-4e19-995d-a367934cdcbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7c98e29-4a1b-4387-a773-d79fd4705403.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d7c98e29-4a1b-4387-a773-d79fd4705403.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="64345066-6cf8-4e19-995d-a367934cdcbc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +185,7 @@
       <workItem from="1615558755820" duration="134000" />
       <workItem from="1617286642631" duration="5574000" />
       <workItem from="1617541585113" duration="81000" />
-      <workItem from="1628771474930" duration="417000" />
+      <workItem from="1628771474930" duration="545000" />
     </task>
     <task id="LOCAL-00001" summary="mep mysql">
       <created>1602938002886</created>
@@ -239,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628771541580</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="gestion des roles finalisé">
+      <created>1628771896582</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1628771896582</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
