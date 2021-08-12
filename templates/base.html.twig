@@ -22,9 +22,11 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ path('blog') }}">Articles</a>
             </li>
+            {% if is_granted('ROLE_USER') %}
             <li class="nav-item">
                 <a class="nav-link" href="{{ path('profil') }}">Profil</a>
             </li>
+            {% endif %}
 
             {% if is_granted('ROLE_USER') %}
                 {% if is_granted('ROLE_EDITOR') %}

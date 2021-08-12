@@ -10,12 +10,12 @@
             <div class="card-body">
                 <h5 class="card-title">{{ app.user.email }}</h5>
                 {% for role in app.user.roles %}
-                    <p class="card-text">{{ role }}</p>
+                    <span class="badge badge-primary">{{ role }}</span>
                 {% endfor %}
                 {% if is_granted('ROLE_EDITOR') %}
-                    <p class="card-text">{{ app.user.articles | length }} articles</p>
+                    <p class="card-text">{{ app.user.articles | length }} {{ app.user.articles | length > 1 ? "articles" : "article" }}</p>
                 {% endif %}
-                <a href="{{ path('profil_edit') }}" class="btn btn-primary">modifer</a>
+                <a href="{{ path('admin_userEdit', {'id' : app.user.id}) }}" class="btn btn-primary">modifer</a>
             </div>
         </div>
     </div>
