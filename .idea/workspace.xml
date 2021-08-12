@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64345066-6cf8-4e19-995d-a367934cdcbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/security/profil.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7c98e29-4a1b-4387-a773-d79fd4705403.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d7c98e29-4a1b-4387-a773-d79fd4705403.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/category/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category/create.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/category/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/category/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +144,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="CSV-Groovy.csv.groovy" />
     <property name="database.data.extractors.current.id" value="CSV-Groovy.csv.groovy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -189,7 +182,13 @@
       <workItem from="1603451862663" duration="24000" />
       <workItem from="1603631605303" duration="59000" />
       <workItem from="1603704442875" duration="845000" />
-      <workItem from="1603796962397" duration="6869000" />
+      <workItem from="1603796962397" duration="16526000" />
+      <workItem from="1615315956641" duration="8000" />
+      <workItem from="1615316099808" duration="1214000" />
+      <workItem from="1615558755820" duration="134000" />
+      <workItem from="1617286642631" duration="5574000" />
+      <workItem from="1617541585113" duration="81000" />
+      <workItem from="1628771474930" duration="417000" />
     </task>
     <task id="LOCAL-00001" summary="mep mysql">
       <created>1602938002886</created>
@@ -226,7 +225,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603631635206</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="gestion des roles finalisé">
+      <created>1603805789256</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603805789256</updated>
+    </task>
+    <task id="LOCAL-00007" summary="gestion des roles finalisé">
+      <created>1628771541580</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1628771541580</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,99 +251,7 @@
     <MESSAGE value="wip form" />
     <MESSAGE value="ajout categories, refacto vue articles, ajout form categories" />
     <MESSAGE value="gestion des roles" />
-    <option name="LAST_COMMIT_MESSAGE" value="gestion des roles" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="573" y="329" width="444" height="249" key="#Composer" timestamp="1602923126874">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="573" y="329" width="444" height="249" key="#Composer/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1602923126874" />
-    <state x="0" y="378" width="1397" height="301" key="#SQL_Dialects" timestamp="1603301792542">
-      <screen x="0" y="27" width="1920" height="997" />
-    </state>
-    <state x="0" y="378" width="1397" height="301" key="#SQL_Dialects/0.27.1920.997@0.27.1920.997" timestamp="1603301792542" />
-    <state x="507" y="341" width="820" height="456" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603203425915">
-      <screen x="0" y="27" width="1920" height="997" />
-    </state>
-    <state x="921" y="927" width="1366" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.3200.1668@0.0.3200.1668" timestamp="1603048246589" />
-    <state x="507" y="341" width="820" height="456" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.997@0.27.1920.997" timestamp="1603203425915" />
-    <state x="395" y="111" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1602937027883" />
-    <state x="589" y="131" width="412" height="645" key="#com.intellij.ide.util.MemberChooser" timestamp="1603140598553">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="589" y="131" width="412" height="645" key="#com.intellij.ide.util.MemberChooser/921.900.1366.768/0.0.1600.900@0.0.1600.900" timestamp="1603140598553" />
-    <state x="640" y="257" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603204573323">
-      <screen x="0" y="27" width="1920" height="997" />
-    </state>
-    <state x="640" y="257" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1920.997@0.27.1920.997" timestamp="1603204573323" />
-    <state x="533" y="208" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1602947979228" />
-    <state x="438" y="44" width="924" height="911" key="CommitChangelistDialog2" timestamp="1603631635086">
-      <screen x="0" y="27" width="1920" height="997" />
-    </state>
-    <state x="438" y="44" width="924" height="911" key="CommitChangelistDialog2/0.27.1920.997@0.27.1920.997" timestamp="1603631635085" />
-    <state x="365" y="15" width="860" height="876" key="CommitChangelistDialog2/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1602949607766" />
-    <state x="661" y="350" width="277" height="207" key="Github.ShareDialog" timestamp="1602935209323">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="661" y="350" width="277" height="207" key="Github.ShareDialog/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1602935209323" />
-    <state x="572" y="127" width="445" height="652" key="Github.UntrackedFilesDialog" timestamp="1602935263294">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="572" y="127" width="445" height="652" key="Github.UntrackedFilesDialog/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1602935263294" />
-    <state width="1067" height="225" key="GridCell.Tab.0.bottom" timestamp="1603054841799">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state width="1067" height="225" key="GridCell.Tab.0.bottom/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1603054841799" />
-    <state width="1067" height="225" key="GridCell.Tab.0.center" timestamp="1603054841799">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state width="1067" height="225" key="GridCell.Tab.0.center/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1603054841799" />
-    <state width="1067" height="225" key="GridCell.Tab.0.left" timestamp="1603054841799">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state width="1067" height="225" key="GridCell.Tab.0.left/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1603054841799" />
-    <state width="1067" height="225" key="GridCell.Tab.0.right" timestamp="1603054841799">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state width="1067" height="225" key="GridCell.Tab.0.right/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1603054841799" />
-    <state x="938" y="955" width="900" height="806" key="SettingsEditor" timestamp="1603801194575">
-      <screen x="765" y="900" width="1920" height="1080" />
-    </state>
-    <state x="289" y="85" width="1022" height="737" key="SettingsEditor/0.0.3200.1668@0.0.3200.1668" timestamp="1603053330089" />
-    <state x="173" y="78" width="900" height="737" key="SettingsEditor/0.27.1920.997@0.27.1920.997" timestamp="1603281363475" />
-    <state x="938" y="955" width="900" height="806" key="SettingsEditor/765.900.1920.1080/1600.0.1600.900/0.0.1600.900@765.900.1920.1080" timestamp="1603801194575" />
-    <state width="598" height="495" key="SwitcherDM" timestamp="1603301624725">
-      <screen x="0" y="27" width="1920" height="997" />
-    </state>
-    <state width="598" height="495" key="SwitcherDM/0.27.1920.997@0.27.1920.997" timestamp="1603301624725" />
-    <state width="498" height="446" key="SwitcherDM/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1603012626489" />
-    <state width="498" height="446" key="SwitcherDM/921.900.1366.768/0.0.1600.900@0.0.1600.900" timestamp="1603140265249" />
-    <state x="474" y="233" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603631640890">
-      <screen x="0" y="27" width="1920" height="997" />
-    </state>
-    <state x="474" y="233" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.997@0.27.1920.997" timestamp="1603631640890" />
-    <state x="395" y="186" width="800" height="535" key="Vcs.Push.Dialog.v2/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1602949611777" />
-    <state x="689" y="327" width="367" height="260" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603054052041">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="689" y="327" width="367" height="260" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1603054052041" />
-    <state x="589" y="236" width="896" height="579" key="find.popup" timestamp="1603215570265">
-      <screen x="0" y="27" width="1920" height="997" />
-    </state>
-    <state x="589" y="236" width="896" height="579" key="find.popup/0.27.1920.997@0.27.1920.997" timestamp="1603215570265" />
-    <state x="491" y="189" width="746" height="522" key="find.popup/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1603054162251" />
-    <state x="491" y="189" width="746" height="522" key="find.popup/921.900.1366.768/0.0.1600.900@0.0.1600.900" timestamp="1603190139101" />
-    <state x="604" y="362" width="381" height="183" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1602935179102">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="604" y="362" width="381" height="183" key="git4idea.remote.GitConfigureRemotesDialog/921.900.1366.768/0.0.1600.900/1600.0.1600.900@0.0.1600.900" timestamp="1602935179102" />
-    <state x="511" y="222" width="568" height="462" key="refactoring.ChangeSignatureDialog" timestamp="1603093993211">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="511" y="222" width="568" height="462" key="refactoring.ChangeSignatureDialog/921.900.1366.768/0.0.1600.900@0.0.1600.900" timestamp="1603093993211" />
-    <state x="623" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1603216340756">
-      <screen x="0" y="27" width="1920" height="997" />
-    </state>
-    <state x="623" y="245" width="672" height="678" key="search.everywhere.popup/0.27.1920.997@0.27.1920.997" timestamp="1603216340756" />
+    <MESSAGE value="gestion des roles finalisé" />
+    <option name="LAST_COMMIT_MESSAGE" value="gestion des roles finalisé" />
   </component>
 </project>
